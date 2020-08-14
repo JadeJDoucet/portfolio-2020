@@ -3,7 +3,6 @@ import logo from './logo.svg';
 import './App.css';
 import Home from './pages/home';
 
-// Move most of this stuff to it's own page, each page of the parallax scrolling to be it's own component
 function App() {
   return (
     <div className="App">
@@ -14,5 +13,7 @@ function App() {
     </div>
   );
 }
+// Add page for projects - maybe use github API
+// Add page for blogs - use dev.to API
 
 export default App;
