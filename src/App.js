@@ -1,7 +1,10 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { fab } from '@fortawesome/free-brands-svg-icons'
+library.add(fab);
 
 function App() {
   return (
@@ -12,16 +15,16 @@ function App() {
           <h2>Jade Doucet</h2>
           <h4>Software Engineer, Web Developer</h4>
         </div>
-        <FontAwesomeIcon icon={["fab", "github"]} />
+        
         <div className="icons-row">
         <a href="https://linkedin.com/in/jadejdoucet">
-          <i className="fab fa-linkedin fa-2x"></i>
+          <FontAwesomeIcon icon={['fab', 'linkedin']} />
         </a>
         <a href="https://github.com/JadeJDoucet">
-          <i className="fab fa-github fa-2x"></i>
+          <FontAwesomeIcon icon={['fab', 'github']} />
         </a>
         <a href="https://dev.to/jadejdoucet">
-          <i className="fab fa-dev fa-2x"></i>
+        < FontAwesomeIcon icon={['fab', 'dev']} />
         </a>
       </div>
       </header>
