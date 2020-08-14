@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { FontAwesomeIcon } from '@fortawesome/fontawesome-svg-core';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
           <h2>Jade Doucet</h2>
           <h4>Software Engineer, Web Developer</h4>
         </div>
+        <FontAwesomeIcon icon={["fab", "github"]} />
         <div className="icons-row">
         <a href="https://linkedin.com/in/jadejdoucet">
           <i className="fab fa-linkedin fa-2x"></i>
