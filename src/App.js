@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { fab } from '@fortawesome/free-brands-svg-icons'
 library.add(fab);
 
+// Move most of this stuff to it's own page, each page of the parallax scrolling to be it's own component
 function App() {
   return (
     <div className="App">
@@ -17,16 +18,16 @@ function App() {
         </div>
         
         <div className="icons-row">
-        <a href="https://linkedin.com/in/jadejdoucet">
-          <FontAwesomeIcon icon={['fab', 'linkedin']} />
-        </a>
-        <a href="https://github.com/JadeJDoucet">
-          <FontAwesomeIcon icon={['fab', 'github']} />
-        </a>
-        <a href="https://dev.to/jadejdoucet">
-        < FontAwesomeIcon icon={['fab', 'dev']} />
-        </a>
-      </div>
+          <a href="https://linkedin.com/in/jadejdoucet">
+            <FontAwesomeIcon icon={['fab', 'linkedin']} />
+          </a>
+          <a href="https://github.com/JadeJDoucet">
+            <FontAwesomeIcon icon={['fab', 'github']} />
+          </a>
+          <a href="https://dev.to/jadejdoucet">
+          < FontAwesomeIcon icon={['fab', 'dev']} />
+          </a>
+        </div>
       </header>
     </div>
   );
