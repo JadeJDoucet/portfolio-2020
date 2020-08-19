@@ -21,6 +21,17 @@ code {
   display: inline-block;
 }
 
+/***** Home CSS *****/
 #home-container {
   height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/***** About CSS *****/
+#about-container {
+  height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
 }
