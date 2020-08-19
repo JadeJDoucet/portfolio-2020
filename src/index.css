@@ -22,7 +22,7 @@ code {
 }
 
 /***** Home *****/
-#home-container {
+#home {
   height: 100vh;
   margin-left: auto;
   margin-right: auto;
@@ -30,7 +30,7 @@ code {
 }
 
 /***** About *****/
-#about-container {
+#about{
   height: 100vh;
   margin: 0px 15px;
 }
@@ -41,7 +41,11 @@ code {
   justify-content: space-around;
 }
 
+.page-title {
+  text-align: center;
+}
+
 /***** Projects *****/
-#projects-container {
+#projects {
   height: 100vh;
 }

@@ -8,7 +8,7 @@ library.add(fab);
 
 function Home() {
     return (
-        <div id="home-container">
+        <div id="home">
             <img src={logo} className="App-logo" alt="logo" />
             <h2>Jade Doucet</h2>
             <h4>Software Engineer, Web Developer</h4>

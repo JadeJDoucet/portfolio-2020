@@ -2,8 +2,8 @@ import React from 'react';
 
 export default function About() {
     return (
-        <div id="about-container">
-            <h2>Bio:</h2>
+        <div id="about">
+            <h2 className="page-title">Bio</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Vestibulum sagittis nisl in odio imperdiet, pharetra malesuada ex accumsan.
                 Integer urna nulla, varius et ornare in, tincidunt non justo.
