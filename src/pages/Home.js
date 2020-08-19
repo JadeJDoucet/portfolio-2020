@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from '../logo.svg';
 // Add FontAwesome
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -8,6 +9,7 @@ library.add(fab);
 function Home() {
     return (
         <div id="home-container">
+            <img src={logo} className="App-logo" alt="logo" />
             <h2>Jade Doucet</h2>
             <h4>Software Engineer, Web Developer</h4>
 
