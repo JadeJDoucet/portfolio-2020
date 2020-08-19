@@ -21,7 +21,7 @@ code {
   display: inline-block;
 }
 
-/***** Home CSS *****/
+/***** Home *****/
 #home-container {
   height: 100vh;
   margin-left: auto;
@@ -29,14 +29,20 @@ code {
   text-align: center;
 }
 
-/***** About CSS *****/
+/***** About *****/
 #about-container {
   height: 100vh;
   margin: 0px 15px;
 }
 
 #job-container {
+  height: 100vh;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+/***** Projects *****/
+#projects-container {
+  height: 100vh;
 }
