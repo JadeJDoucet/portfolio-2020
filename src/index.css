@@ -32,6 +32,11 @@ code {
 /***** About CSS *****/
 #about-container {
   height: 100vh;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0px 15px;
+}
+
+#job-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
