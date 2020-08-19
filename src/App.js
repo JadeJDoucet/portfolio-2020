@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Home from './pages/Home';
-
+import About from './pages/About';
 
 function App() {
   return (
@@ -10,6 +10,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <Home />
+        <About />
       </header>
     </div>
   );

@@ -7,7 +7,7 @@ library.add(fab);
 
 function Home() {
     return (
-        <div>
+        <div id="home-container">
             <h2>Jade Doucet</h2>
             <h4>Software Engineer, Web Developer</h4>
 
