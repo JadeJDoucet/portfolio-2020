@@ -13,6 +13,38 @@ export default function About() {
                 Vestibulum vel enim ullamcorper, lacinia ex non, maximus mi. Quisque vel metus a metus rhoncus vehicula.
                 Integer sagittis nunc mi, a commodo tellus finibus ac.
             </p>
+            <div id="job-container">
+                <div className="job">
+                    <h3>Front-End</h3>
+                    <ul className="skills">
+                    <li className="skills-item">JavaScript</li>
+                    <li className="skills-item">HTML / CSS</li>
+                    <li className="skills-item">React / React Native</li>
+                    <li className="skills-item">Sass</li>
+                    <li className="skills-item">AngularJS</li>
+                    <li className="skills-item">JQuery</li>
+                    </ul>
+                </div>
+
+                <div className="job">
+                    <h3>Back-End</h3>
+                    <ul className="skills">
+                    <li className="skills-item">Node</li>
+                    <li className="skills-item">ExpressJS</li>
+                    <li className="skills-item">SQL - MYSQL / PostGreSQL</li>
+                    <li className="skills-item">NoSQL - MongoDB</li>
+                    </ul>
+                </div>
+
+                <div className="job">
+                    <h3>Extras</h3>
+                    <ul className="skills">
+                    <li className="skills-item">Git</li>
+                    <li className="skills-item">Agile</li>
+                    <li className="skills-item">Linux</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     );
 }
