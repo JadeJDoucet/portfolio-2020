@@ -34,7 +34,7 @@ code {
 /***** About *****/
 #about{
   height: 100vh;
-  margin: 0px 15px;
+  padding: 0px 15px;
   background-color: rgb(43, 126, 129);
 }
 
