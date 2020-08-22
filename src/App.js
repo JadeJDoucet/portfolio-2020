@@ -4,19 +4,32 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Blogs from './pages/Blogs';
-import Swiper, { Navigation, Pagination } from 'swiper';
-Swiper.use([Navigation, Pagination]);
+// Swiper
+import { Swiper, SwiperSlide }  from 'swiper/react';
+import SwiperCore, { EffectCube, Navigation, Pagination} from 'swiper';
+SwiperCore.use([EffectCube, Navigation, Pagination]);
 
 function App() {
+
+  var cubeEffect = {
+    shadow: true,
+    slideShadows: true,
+    shadowOffset: 20,
+    shadowScale: 0.94,
+  }; 
   return (
-    <div className="App-container swiper-container">
-      <div className="swiper-wrapper">
+    <Swiper
+      effect='cube'
+      grabCursor={true}
+      pagination={{ clickable: true }}
+    >
+      {}
         <Home className="swiper-slide" />
         <Projects className="swiper-slide" />
         <About className="swiper-slide" />
         <Blogs className="swiper-slide" />
-      </div>
-    </div>
+
+    </Swiper>
   );
 }
 // Add page for projects - maybe use github API
