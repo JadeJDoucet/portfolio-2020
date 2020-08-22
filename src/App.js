@@ -17,7 +17,7 @@ function App() {
   <Projects />,
   <About />,
   <Blogs />];
-
+// maybe add virtual, mousewheel isnt working for this
   return (
     <Swiper
       direction='vertical'
