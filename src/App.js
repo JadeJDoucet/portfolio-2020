@@ -1,4 +1,6 @@
 import React from 'react';
+import Swiper, { Navigation, Pagination } from 'swiper';
+Swiper.use([Navigation, Pagination]);
 
 import './App.css';
 import Home from './pages/Home';
