@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+/* Swiper CSS */
+.swiper-container {
+  width: 600px;
+  height: 300px;
+}
