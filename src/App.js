@@ -31,7 +31,7 @@ function App() {
       pagination={{ clickable: true }}
     >
       {pages.map((page, i) => {
-        return <SwiperSlide>page</SwiperSlide>;
+        return <SwiperSlide>{page}</SwiperSlide>;
       })}
         
 
