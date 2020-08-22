@@ -24,14 +24,16 @@ function App() {
   <Projects className="swiper-slide" />,
   <About className="swiper-slide" />,
   <Blogs className="swiper-slide" />];
+
   return (
     <Swiper
+      direction='vertical'
       effect='cube'
       grabCursor={true}
       pagination={{ clickable: true }}
     >
       {pages.map((page, i) => {
-        return <SwiperSlide>{page}</SwiperSlide>;
+        return <SwiperSlide key={`slide=${i}`}>{page}</SwiperSlide>;
       })}
         
 
