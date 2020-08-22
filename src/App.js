@@ -13,13 +13,6 @@ SwiperCore.use([EffectCube, Navigation, Pagination]);
 
 
 function App() {
-
-  var cubeEffect = {
-    shadow: true,
-    slideShadows: true,
-    shadowOffset: 20,
-    shadowScale: 0.94,
-  }; 
   const pages = [<Home className="swiper-slide" />,
   <Projects className="swiper-slide" />,
   <About className="swiper-slide" />,
@@ -31,6 +24,9 @@ function App() {
       effect='cube'
       grabCursor={true}
       pagination={{ clickable: true }}
+      mousewheel={true}
+      loop={true}
+      parallax={true}
     >
       {pages.map((page, i) => {
         return <SwiperSlide key={`slide=${i}`}>{page}</SwiperSlide>;

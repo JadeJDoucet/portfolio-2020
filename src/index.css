@@ -24,15 +24,18 @@ code {
 /***** Home ******/
 #home {
   height: 100vh;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  background-color: rgb(43, 126, 129);
 }
 
 /***** About *****/
 #about{
   height: 100vh;
   margin: 0px 15px;
+  background-color: rgb(43, 126, 129);
 }
 
 #job-container {
@@ -48,6 +51,7 @@ code {
 /***** Projects *****/
 #projects {
   height: 100vh;
+  background-color: rgb(43, 126, 129);
 }
 
 body {
