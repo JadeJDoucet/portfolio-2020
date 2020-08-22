@@ -7,7 +7,10 @@ import Blogs from './pages/Blogs';
 // Swiper
 import { Swiper, SwiperSlide }  from 'swiper/react';
 import SwiperCore, { EffectCube, Navigation, Pagination} from 'swiper';
+import 'swiper/swiper.scss';
+import 'swiper/components/effect-cube/effect-cube.scss';
 SwiperCore.use([EffectCube, Navigation, Pagination]);
+
 
 function App() {
 
@@ -17,17 +20,20 @@ function App() {
     shadowOffset: 20,
     shadowScale: 0.94,
   }; 
+  const pages = [<Home className="swiper-slide" />,
+  <Projects className="swiper-slide" />,
+  <About className="swiper-slide" />,
+  <Blogs className="swiper-slide" />];
   return (
     <Swiper
       effect='cube'
       grabCursor={true}
       pagination={{ clickable: true }}
     >
-      {}
-        <Home className="swiper-slide" />
-        <Projects className="swiper-slide" />
-        <About className="swiper-slide" />
-        <Blogs className="swiper-slide" />
+      {pages.map((page, i) => {
+        return <SwiperSlide>page</SwiperSlide>;
+      })}
+        
 
     </Swiper>
   );
