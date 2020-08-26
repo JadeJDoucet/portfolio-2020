@@ -6,10 +6,10 @@ import Projects from './pages/Projects';
 import Blogs from './pages/Blogs';
 // Swiper
 import { Swiper, SwiperSlide }  from 'swiper/react';
-import SwiperCore, { EffectCube, Navigation, Pagination, Mousewheel} from 'swiper';
+import SwiperCore, { EffectCube, Mousewheel } from 'swiper';
 import 'swiper/swiper.scss';
 import 'swiper/components/effect-cube/effect-cube.scss';
-SwiperCore.use([EffectCube, Navigation, Pagination, Mousewheel]);
+SwiperCore.use([EffectCube, Mousewheel]);
 
 
 function App() {
@@ -25,7 +25,6 @@ function App() {
       direction='vertical'
       effect='cube'
       grabCursor={true}
-      pagination={{ clickable: true }}
       loop={true}
       mousewheel={true}
     >
