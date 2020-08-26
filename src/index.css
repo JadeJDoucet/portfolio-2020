@@ -28,14 +28,12 @@ code {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  background-color: rgb(43, 126, 129);
 }
 
 /***** About *****/
 #about{
   height: 100vh;
   padding: 0px 15px;
-  background-color: rgb(43, 126, 129);
 }
 
 #job-container {
@@ -51,9 +49,11 @@ code {
 /***** Projects *****/
 #projects {
   height: 100vh;
-  background-color: rgb(43, 126, 129);
 }
 
 body {
-  background-color: rgb(51, 150, 153);
+  background-color: #959fb2;
+  background-image: linear-gradient(to right, #959fb2, #06090f);
+  color: #fff;
 }
+
