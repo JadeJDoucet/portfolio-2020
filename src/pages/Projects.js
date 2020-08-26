@@ -6,8 +6,17 @@ export default function Projects() {
     // If not, a div with flex-row
     return (
         <div id="projects">
+            Projects
             <div className="project">
-                <h2 className="project-title">Project Name</h2>
+                <h2 className="project-title">ScannAR</h2>
+                
+            </div>
+            <div className="project">
+                <h2 className="project-title">Adopt-A-Pothole</h2>
+                
+            </div>
+            <div className="project">
+                <h2 className="project-title">Readr</h2>
                 
             </div>
 
