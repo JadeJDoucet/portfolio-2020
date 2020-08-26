@@ -6,10 +6,10 @@ import Projects from './pages/Projects';
 import Blogs from './pages/Blogs';
 // Swiper
 import { Swiper, SwiperSlide }  from 'swiper/react';
-import SwiperCore, { EffectCube, Navigation, Pagination} from 'swiper';
+import SwiperCore, { EffectCube, Navigation, Pagination, Mousewheel} from 'swiper';
 import 'swiper/swiper.scss';
 import 'swiper/components/effect-cube/effect-cube.scss';
-SwiperCore.use([EffectCube, Navigation, Pagination]);
+SwiperCore.use([EffectCube, Navigation, Pagination, Mousewheel]);
 
 
 function App() {
@@ -19,13 +19,15 @@ function App() {
   <Blogs />];
 // maybe add virtual, mousewheel isnt working for this
   return (
+  
+    
     <Swiper
       direction='vertical'
       effect='cube'
       grabCursor={true}
       pagination={{ clickable: true }}
-      mousewheel={true}
       loop={true}
+      mousewheel={true}
     >
       {pages.map((page, i) => {
         return <SwiperSlide key={`slide=${i}`} tag="li">{page}</SwiperSlide>;
