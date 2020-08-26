@@ -28,12 +28,19 @@ code {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  background-image: url("./background-image-moon.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /***** About *****/
 #about{
   height: 100vh;
+  width: 100%;
   padding: 0px 15px;
+  margin-top: -20px;
+  background-color: #18191d;
 }
 
 #job-container {
@@ -48,12 +55,17 @@ code {
 
 /***** Projects *****/
 #projects {
-  height: 100vh;
+  margin-top: -20px;
+  height: 100vh;  
+
 }
 
 body {
-  background-color: #959fb2;
-  background-image: linear-gradient(to right, #959fb2, #06090f);
   color: #fff;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #18191d;
 }
+
+
 
