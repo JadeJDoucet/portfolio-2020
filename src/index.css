@@ -28,7 +28,7 @@ code {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  background-image: url("./background-image-moon.jpg");
+ /* background-image: url("./background-image-moon.jpg");*/
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
