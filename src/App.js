@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -13,10 +13,13 @@ SwiperCore.use([EffectCube, Mousewheel]);
 
 
 function App() {
+  const [currPage, setCurrPage] = useState('home');
+  // currPage will tell the nav bar which item is to be highlighted, pages will setCurrPage when in view
   const pages = [<Home />,
   <Projects />,
   <About />,
   <Blogs />];
+
 // maybe add virtual, mousewheel isnt working for this
   return (
   
