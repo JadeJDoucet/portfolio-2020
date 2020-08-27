@@ -6,7 +6,6 @@ export default function Projects() {
     // If not, a div with flex-row
     return (
         <div id="projects">
-            Projects
             <div className="project">
                 <h2 className="project-title">ScannAR</h2>
                 
