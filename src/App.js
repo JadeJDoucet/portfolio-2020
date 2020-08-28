@@ -6,10 +6,10 @@ import Projects from './pages/Projects';
 import Blogs from './pages/Blogs';
 // Swiper
 import { Swiper, SwiperSlide }  from 'swiper/react';
-import SwiperCore, { EffectCube, Mousewheel } from 'swiper';
+import SwiperCore, { EffectCube, Mousewheel, Navigation } from 'swiper';
 import 'swiper/swiper.scss';
 import 'swiper/components/effect-cube/effect-cube.scss';
-SwiperCore.use([EffectCube, Mousewheel]);
+SwiperCore.use([EffectCube, Mousewheel, Navigation]);
 
 
 function App() {
