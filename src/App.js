@@ -22,8 +22,6 @@ function App() {
 
 // maybe add virtual, mousewheel isnt working for this
   return (
-  
-    
     <Swiper
       direction='vertical'
       effect='cube'
@@ -34,8 +32,6 @@ function App() {
       {pages.map((page, i) => {
         return <SwiperSlide key={`slide=${i}`} tag="li">{page}</SwiperSlide>;
       })}
-        
-
     </Swiper>
   );
 }
