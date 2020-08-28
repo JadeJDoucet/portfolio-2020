@@ -2,7 +2,11 @@
 # Portfolio Website
 
 This is a new portfolio website built with React.
-* *Still currently under construction*
+* Still currently under construction*
+
+## Requirements
+
+* A config file is needed to perform API Requests to Dev.to for blog posts.
 
 ## Available Scripts
 
