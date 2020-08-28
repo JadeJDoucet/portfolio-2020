@@ -13,11 +13,11 @@ SwiperCore.use([EffectCube, Mousewheel ]);
 
 
 function App() {
-  const [currPage, setCurrPage] = useState('home');
+  const [currPage, setCurrPage] = useState(0);
   // currPage will tell the nav bar which item is to be highlighted, pages will setCurrPage when in view
   // Will ned to use the prop 'isActive' with Swiper slides to handle navigation
   //https://swiperjs.com/react/#swiperslide-props
-  
+
   const pages = [<Home />,
   <Projects />,
   <About />,
@@ -33,7 +33,11 @@ function App() {
       mousewheel={true}
     >
       {pages.map((page, i) => {
-        return <SwiperSlide key={`slide=${i}`} tag="li">{page}</SwiperSlide>;
+        if (i === currPage) { // use index to track which page is active, setCurrPage should cause re-render
+          return <SwiperSlide key={`slide=${i}`} tag="li" isActive>{page}</SwiperSlide>
+        } else {
+          return <SwiperSlide key={`slide=${i}`} tag="li">{page}</SwiperSlide>;
+        }
       })}
     </Swiper>
   );
