@@ -2,7 +2,7 @@
 # Portfolio Website
 
 This is a new portfolio website built with React.
-* Still currently under construction *
+* *Still currently under construction*
 
 ## Available Scripts
 
