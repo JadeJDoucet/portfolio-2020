@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function NavBar({ setCurrPage }) {
+export default function NavBar({ setCurrPage, currPage }) {
 
     return (
         <div id="nav-bar">
