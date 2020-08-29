@@ -27,7 +27,7 @@ function App() {
 // maybe add virtual, mousewheel isnt working for this
   return (
     <div> 
-      <NavBar setCurrPage={setCurrPage}/>
+      <NavBar setCurrPage={setCurrPage} currPage={currPage}/>
       <Swiper
         direction='vertical'
         effect='cube'
