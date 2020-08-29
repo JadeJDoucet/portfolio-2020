@@ -26,22 +26,24 @@ function App() {
 
 // maybe add virtual, mousewheel isnt working for this
   return (
-    <Swiper
-      direction='vertical'
-      effect='cube'
-      grabCursor={true}
-      loop={true}
-      mousewheel={true}
-    >
+    <div> 
       <NavBar setCurrPage={setCurrPage}/>
-      {pages.map((page, i) => {
-        if (i === currPage) { // use index to track which page is active, setCurrPage should cause re-render
-          return <SwiperSlide key={`slide=${i}`} tag="li" isActive>{page}</SwiperSlide>
-        } else {
-          return <SwiperSlide key={`slide=${i}`} tag="li">{page}</SwiperSlide>;
-        }
-      })}
-    </Swiper>
+      <Swiper
+        direction='vertical'
+        effect='cube'
+        grabCursor={true}
+        loop={true}
+        mousewheel={true}
+      >
+        {pages.map((page, i) => {
+          if (i === currPage) { // use index to track which page is active, setCurrPage should cause re-render
+            return <SwiperSlide key={`slide=${i}`} tag="li" isActive>{page}</SwiperSlide>
+          } else {
+            return <SwiperSlide key={`slide=${i}`} tag="li">{page}</SwiperSlide>;
+          }
+        })}
+      </Swiper>
+    </div>
   );
 }
 // Add page for projects - maybe use github API
