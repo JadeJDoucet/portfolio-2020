@@ -82,11 +82,18 @@ body {
   border: #fff 2px solid;
   width: 25em;
   text-align: center;
+  height: 100%;
 }
 
 #projects .project:hover {
   box-shadow: 0px 0px 5px 1px #fff;
   cursor: pointer;
+}
+
+.project-link {
+  height: 600px;
+  color: #fff;
+  text-decoration: none;
 }
 
 /* Nav Bar */
