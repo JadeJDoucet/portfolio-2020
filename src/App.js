@@ -19,10 +19,10 @@ function App() {
   // Will ned to use the prop 'isActive' with Swiper slides to handle navigation
   //https://swiperjs.com/react/#swiperslide-props
 
-  const pages = [<Home />,
-  <Projects />,
-  <About />,
-  <Blogs />];
+  const pages = [<Home setPageHome={setCurrPage} pageIndex={0}/>,
+  <Projects setPageProjects={setCurrPage} pageIndex={1}/>,
+  <About setPageAbout={setCurrPage} pageIndex={2}/>,
+  <Blogs setPageBlogs={setCurrPage} pageIndex={3}/>];
 
 // maybe add virtual, mousewheel isnt working for this
   return (
