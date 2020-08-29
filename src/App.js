@@ -33,7 +33,7 @@ function App() {
       loop={true}
       mousewheel={true}
     >
-      <NavBar />
+      <NavBar setCurrPage={setCurrPage}/>
       {pages.map((page, i) => {
         if (i === currPage) { // use index to track which page is active, setCurrPage should cause re-render
           return <SwiperSlide key={`slide=${i}`} tag="li" isActive>{page}</SwiperSlide>
