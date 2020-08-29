@@ -4,9 +4,10 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Blogs from './pages/Blogs';
+import NavBar from './components/NavBar';
 // Swiper
 import { Swiper, SwiperSlide }  from 'swiper/react';
-import SwiperCore, { EffectCube, Mousewheel } from 'swiper';
+import SwiperCore, { EffectCube, Mousewheel, Navigation } from 'swiper';
 import 'swiper/swiper.scss';
 import 'swiper/components/effect-cube/effect-cube.scss';
 SwiperCore.use([EffectCube, Mousewheel ]);
@@ -32,6 +33,7 @@ function App() {
       loop={true}
       mousewheel={true}
     >
+      <NavBar />
       {pages.map((page, i) => {
         if (i === currPage) { // use index to track which page is active, setCurrPage should cause re-render
           return <SwiperSlide key={`slide=${i}`} tag="li" isActive>{page}</SwiperSlide>
