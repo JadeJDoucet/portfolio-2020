@@ -6,10 +6,12 @@ export default function Projects() {
     // If not, a div with flex-row
     return (
         <div id="projects">
-            <div className="project">
+            <a className="project-link" href="https://github.com/Assert-Reconceptualization/ScannAr" target="_blank" rel="noopener noreferrer">
+                <div className="project">
                 <h2 className="project-title">ScannAR</h2>
                 
-            </div>
+                </div>
+            </a>
             <div className="project">
                 <h2 className="project-title">Adopt-A-Pothole</h2>
                 
