@@ -7,10 +7,10 @@ import Blogs from './pages/Blogs';
 import NavBar from './components/NavBar';
 // Swiper
 import { Swiper, SwiperSlide }  from 'swiper/react';
-import SwiperCore, { EffectCube, Mousewheel, Navigation } from 'swiper';
+import SwiperCore, { EffectCube, Mousewheel, Pagination } from 'swiper';
 import 'swiper/swiper.scss';
 import 'swiper/components/effect-cube/effect-cube.scss';
-SwiperCore.use([EffectCube, Mousewheel, Navigation ]);
+SwiperCore.use([EffectCube, Mousewheel, Pagination ]);
 
 
 function App() {
@@ -34,7 +34,7 @@ function App() {
         grabCursor={true}
         loop={true}
         mousewheel={true}
-        navigation
+        pagination
       >
         {pages.map((page, i) => {
           if (i === currPage) { // use index to track which page is active, setCurrPage should cause re-render
