@@ -38,7 +38,7 @@ function App() {
       >
         {pages.map((page, i) => {
           if (i === currPage) { // use index to track which page is active, setCurrPage should cause re-render
-            return <SwiperSlide key={`slide=${i}`} tag="li" isActive={true}>{page}</SwiperSlide>
+            return <SwiperSlide key={`slide=${i}`} tag="li" isactive={true}>{page}</SwiperSlide>
           } else {
             return <SwiperSlide key={`slide=${i}`} tag="li">{page}</SwiperSlide>;
           }
