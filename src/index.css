@@ -5,7 +5,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+  color: #fff;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #18191d;
 }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -39,7 +45,6 @@ code {
   height: 100%;
   width: 100%;
   padding: 0px 15px;
-  margin-top: -20px;
   background-color: #18191d;
 }
 
@@ -61,13 +66,6 @@ code {
 /***** Projects *****/
 #projects {
   height: 100%;  
-  background-color: #18191d;
-}
-
-body {
-  color: #fff;
-  height: 100vh;
-  overflow: hidden;
   background-color: #18191d;
 }
 
@@ -99,21 +97,23 @@ body {
 /* Nav Bar */
 #nav-bar {
   display: flex;
-  width: 25%;
+  width: 100%;
   z-index: 5;
   padding: 0px 0px 10px 0px;
   background-color: rgba(0,0,0,0);
+  border-bottom: solid rgba(255, 255, 255, 0.589) 2px;
 }
 
 #nav-list {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-start;
   width: 100%;
 }
 
 .nav-item {
   list-style-type: none;
+  padding: 0px 10px;
 }
 .nav-item:hover {
   cursor: pointer;
