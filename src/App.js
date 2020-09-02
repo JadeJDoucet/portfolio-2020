@@ -34,7 +34,7 @@ function App() {
         grabCursor={true}
         loop={true}
         mousewheel={true}
-        pagination
+        pagination={{ clickable: true }}
       >
         {pages.map((page, i) => {
           if (i === currPage) { // use index to track which page is active, setCurrPage should cause re-render
