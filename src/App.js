@@ -10,7 +10,7 @@ import { Swiper, SwiperSlide }  from 'swiper/react';
 import SwiperCore, { EffectCube, Mousewheel, Navigation } from 'swiper';
 import 'swiper/swiper.scss';
 import 'swiper/components/effect-cube/effect-cube.scss';
-SwiperCore.use([EffectCube, Mousewheel ]);
+SwiperCore.use([EffectCube, Mousewheel, Navigation ]);
 
 
 function App() {
@@ -22,22 +22,23 @@ function App() {
   const pages = [<Home setPageHome={setCurrPage} pageIndex={0}/>,
   <Projects setPageProjects={setCurrPage} pageIndex={1}/>,
   <About setPageAbout={setCurrPage} pageIndex={2}/>,
-  <Blogs setPageBlogs={setCurrPage} pageIndex={3}/>];
+  <Blogs setPageBlogs={setCurrPage} pageIndex={3}/>]; 
 
 // maybe add virtual, mousewheel isnt working for this
   return (
     <div> 
-      <NavBar setCurrPage={setCurrPage} currPage={currPage}/>
+      <NavBar setNavPage={setCurrPage} currPage={currPage}/>
       <Swiper
         direction='vertical'
         effect='cube'
         grabCursor={true}
         loop={true}
         mousewheel={true}
+        navigation
       >
         {pages.map((page, i) => {
           if (i === currPage) { // use index to track which page is active, setCurrPage should cause re-render
-            return <SwiperSlide key={`slide=${i}`} tag="li" isActive>{page}</SwiperSlide>
+            return <SwiperSlide key={`slide=${i}`} tag="li" isActive={true}>{page}</SwiperSlide>
           } else {
             return <SwiperSlide key={`slide=${i}`} tag="li">{page}</SwiperSlide>;
           }
