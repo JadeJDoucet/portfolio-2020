@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
 import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Blogs from './pages/Blogs';
-import NavBar from './components/NavBar';
 // Swiper
 import { Swiper, SwiperSlide }  from 'swiper/react';
 import SwiperCore, { EffectCube, Mousewheel, Pagination } from 'swiper';
@@ -14,20 +13,33 @@ SwiperCore.use([EffectCube, Mousewheel, Pagination ]);
 
 
 function App() {
-  const [currPage, setCurrPage] = useState(0);
   // currPage will tell the nav bar which item is to be highlighted, pages will setCurrPage when in view
   // Will ned to use the prop 'isActive' with Swiper slides to handle navigation
   //https://swiperjs.com/react/#swiperslide-props
 
-  const pages = [<Home setPageHome={setCurrPage} pageIndex={0}/>,
-  <Projects setPageProjects={setCurrPage} pageIndex={1}/>,
-  <About setPageAbout={setCurrPage} pageIndex={2}/>,
-  <Blogs setPageBlogs={setCurrPage} pageIndex={3}/>]; 
+  const pages = [<Home />,
+  <Projects />,
+  <About />,
+  <Blogs />]; 
 
+    
+    function navIndexToPage(index){
+      switch(index) {
+        case 0:
+          return 'Home';
+        case 1: 
+          return 'Projects';
+        case 2:
+          return 'About';
+        case 3: 
+          return 'Blogs';
+
+        default: return 'Home';
+      }
+    }
 // maybe add virtual, mousewheel isnt working for this
   return (
-    <div> 
-      <NavBar setNavPage={setCurrPage} currPage={currPage}/>
+    <div>
       <Swiper
         direction='vertical'
         effect='cube'
@@ -35,16 +47,12 @@ function App() {
         loop={true}
         mousewheel={true}
         pagination={{ clickable: true, renderBullet: function (index, className) {
-          return '<span class="' + className + ' nav-item">' + (index + 1) + '</span>';
+          return `<span class="${className} nav-item">${navIndexToPage(index)}</span>`;
           }
         }}
       >
         {pages.map((page, i) => {
-          if (i === currPage) { // use index to track which page is active, setCurrPage should cause re-render
-            return <SwiperSlide key={`slide=${i}`} tag="li" isActive={true}>{page}</SwiperSlide>
-          } else {
-            return <SwiperSlide key={`slide=${i}`} tag="li">{page}</SwiperSlide>;
-          }
+          return <SwiperSlide key={`slide=${i}`} tag="li">{page}</SwiperSlide>;
         })}
       </Swiper>
     </div>
