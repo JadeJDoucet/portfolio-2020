@@ -94,4 +94,16 @@ code {
   text-decoration: none;
 }
 
+/* Nav Bar */
+.swiper-pagination {
+  padding: 15px 0px;
+}
+
+.nav-item {
+  list-style-type: none;
+  padding: 0px 10px;
+}
+.nav-item:hover {
+  cursor: pointer;
+}
 
