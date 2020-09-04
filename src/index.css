@@ -64,6 +64,20 @@ code {
   text-align: center;
 }
 
+@media all and (max-width: 825px) {
+  #bio-container {
+    padding: 3px;
+  }
+
+  #about {
+    padding: 3px;
+  }
+  #job-container {
+    flex-direction: row;
+  }
+
+}
+
 /***** Projects *****/
 #projects {
   height: 100%;  
@@ -78,21 +92,43 @@ code {
 }
 
 #projects .project {
-  border: #fff 2px solid;
-  width: 25em;
   text-align: center;
   height: 100%;
 }
 
-#projects .project:hover {
+#projects .project-link:hover {
   box-shadow: 0px 0px 5px 1px #fff;
   cursor: pointer;
 }
 
 .project-link {
+  border: #fff 2px solid;
   height: 600px;
   color: #fff;
   text-decoration: none;
+  min-width: 193px;
+}
+
+/* Medium Screens and Smaller*/
+@media all and (max-width: 825px) {
+  .project-link {
+    height: 70%;
+  }
+}
+
+@media all and (max-width: 475px) {
+  #projects {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .project-link {
+    height: 30%;
+    flex: 0 0 34%;
+    min-width: 160px; 
+  }
+  /* May need to hide any text and just set the background to the image*/
+
 }
 
 /* Nav Bar */
