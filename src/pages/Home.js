@@ -10,6 +10,7 @@ function Home() {
     return (
         <div id="home">
             <img src={logo} className="App-logo" alt="logo" />
+            <h1>I'm under construction, but feel free to look around</h1>
             <h2>Jade Doucet</h2>
             <h4>Software Engineer, Web Developer</h4>
 
