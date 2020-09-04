@@ -4,7 +4,7 @@
   "private": true,
   "author": "Jade Doucet",
   "license": "MIT",
-  "homepage": "https://jadejdoucet.github.io/portfolio-2020",
+  "homepage": "https://jadejdoucet.dev",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
     "@fortawesome/free-brands-svg-icons": "^5.14.0",
