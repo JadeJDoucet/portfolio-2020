@@ -10,7 +10,8 @@ function Home() {
     return (
         <div id="home">
             <img src={logo} className="App-logo" alt="logo" />
-            <h1>I'm under construction, but feel free to look around</h1>
+            <h2>I'm under construction, but feel free to look around</h2>
+            
             <h2>Jade Doucet</h2>
             <h4>Software Engineer, Web Developer</h4>
 
@@ -25,6 +26,8 @@ function Home() {
                 < FontAwesomeIcon icon={['fab', 'dev']} />
                 </a>
             </div>
+            <br/><br/>
+            <h1>↓ Scroll ↓</h1>
         </div>
     );
 }
