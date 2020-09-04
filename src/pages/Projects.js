@@ -12,15 +12,18 @@ export default function Projects() {
                 
                 </div>
             </a>
-            <div className="project">
+            <a className="project-link" href="https://github.com/Assert-Reconceptualization/ScannAr" target="_blank" rel="noopener noreferrer">
+                <div className="project">
                 <h2 className="project-title">Adopt-A-Pothole</h2>
                 
-            </div>
-            <div className="project">
+                </div>
+            </a>
+            <a className="project-link" href="https://github.com/Assert-Reconceptualization/ScannAr" target="_blank" rel="noopener noreferrer">
+                <div className="project">
                 <h2 className="project-title">Readr</h2>
                 
-            </div>
-
+                </div>
+            </a>
         </div>
     );
 }
