@@ -34,7 +34,10 @@ function App() {
         grabCursor={true}
         loop={true}
         mousewheel={true}
-        pagination={{ clickable: true }}
+        pagination={{ clickable: true, renderBullet: function (index, className) {
+          return '<span class="' + className + ' nav-item">' + (index + 1) + '</span>';
+          }
+        }}
       >
         {pages.map((page, i) => {
           if (i === currPage) { // use index to track which page is active, setCurrPage should cause re-render
