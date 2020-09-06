@@ -49,8 +49,8 @@ function App() {
         pagination={{ clickable: true, renderBullet: function (index, className) {
           return `<span class="${className} nav-item">${navIndexToPage(index)}</span>`;
         }}}
-        speed={600}
-        cubeEffect={{ slideShadows: true }}
+        speed={700}
+        cubeEffect={{ slideShadows: false }}
         
         freeMode={false}
         freeModeMomentum={true}
