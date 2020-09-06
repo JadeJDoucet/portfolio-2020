@@ -15,7 +15,7 @@ function Home() {
             <h3>I'm under construction, but feel free to look around</h3>
             
             <h2>Jade Doucet</h2>
-            <h4>Software Engineer, Web Developer</h4>
+            <h4 className="titles">Software Engineer, Web Developer</h4>
 
             <div className="icons-row">
                 <a href="https://linkedin.com/in/jadejdoucet">
