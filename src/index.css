@@ -46,7 +46,6 @@ code {
   height: 100%;
   width: 100%;
   padding: 0px 15px;
-  background-color: #18191dab;
 }
 
 #bio-container {
@@ -81,7 +80,6 @@ code {
 /***** Projects *****/
 #projects {
   height: 100%;  
-  background-color: #18191db0;
 }
 
 #projects {
@@ -103,10 +101,12 @@ code {
 
 .project-link {
   border: #fff 2px solid;
-  height: 600px;
   color: #fff;
   text-decoration: none;
   min-width: 193px;
+  background-image: url('/src/customer-login.png');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* Medium Screens and Smaller*/
