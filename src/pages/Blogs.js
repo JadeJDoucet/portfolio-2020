@@ -5,7 +5,7 @@ export default function Blogs() {
     // Make Dev.to API calls here
     return (
         <div id="blogs">
-            I'm a place holder
+            <h1>Coming soon!</h1>
         </div>
     );
 }
