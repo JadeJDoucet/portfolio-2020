@@ -46,7 +46,7 @@ code {
   height: 100%;
   width: 100%;
   padding: 0px 15px;
-  background-color: #18191d;
+  background-color: #18191dab;
 }
 
 #bio-container {
@@ -81,7 +81,7 @@ code {
 /***** Projects *****/
 #projects {
   height: 100%;  
-  background-color: #18191d;
+  background-color: #18191db0;
 }
 
 #projects {
