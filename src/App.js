@@ -48,8 +48,9 @@ function App() {
         mousewheel={true}
         pagination={{ clickable: true, renderBullet: function (index, className) {
           return `<span class="${className} nav-item">${navIndexToPage(index)}</span>`;
-          }
-        }}
+        }}}
+        speed={600}
+        cubeEffect={{ slideShadows: false }}
       >
         {pages.map((page, i) => {
           return <SwiperSlide key={`slide=${i}`} tag="li">{page}</SwiperSlide>;
