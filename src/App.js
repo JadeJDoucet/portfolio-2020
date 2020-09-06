@@ -6,10 +6,10 @@ import Projects from './pages/Projects';
 import Blogs from './pages/Blogs';
 // Swiper
 import { Swiper, SwiperSlide }  from 'swiper/react';
-import SwiperCore, { EffectCube, Mousewheel, Pagination } from 'swiper';
+import SwiperCore, { EffectCube, Mousewheel, Pagination, Parallax } from 'swiper';
 import 'swiper/swiper.scss';
 import 'swiper/components/effect-cube/effect-cube.scss';
-SwiperCore.use([EffectCube, Mousewheel, Pagination ]);
+SwiperCore.use([EffectCube, Mousewheel, Pagination, Parallax ]);
 
 
 function App() {
@@ -50,7 +50,11 @@ function App() {
           return `<span class="${className} nav-item">${navIndexToPage(index)}</span>`;
         }}}
         speed={600}
-        cubeEffect={{ slideShadows: false }}
+        cubeEffect={{ slideShadows: true }}
+        
+        freeMode={false}
+        freeModeMomentum={true}
+        freeModeSticky={false}
       >
         {pages.map((page, i) => {
           return <SwiperSlide key={`slide=${i}`} tag="li">{page}</SwiperSlide>;
