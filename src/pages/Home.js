@@ -1,6 +1,7 @@
 import React from 'react';
-import logo from '../logo.svg';
-import portrait from '../cartoon-portrait-jade.PNG';
+//import portrait from '../cartoon-portrait-jade.PNG';
+//import portrait from '../jade.PNG';
+import portrait from '../jade_bg.jpg';
 // Add FontAwesome
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -10,7 +11,7 @@ library.add(fab);
 function Home() {
     return (
         <div id="home">
-            <img src={portrait} className="App-logo" alt="logo" />
+            <img src={portrait} width={150} className="App-logo" alt="logo" />
             <h3>I'm under construction, but feel free to look around</h3>
             
             <h2>Jade Doucet</h2>
