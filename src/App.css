@@ -57,7 +57,6 @@
   background-position: center;
   background-repeat: no-repeat;
   transform: translateY(10%);
-  
 }
 
 #home h2 {
@@ -67,6 +66,12 @@
 
 .titles {
   font-style: italic;
+}
+
+@media all and (max-width: 825px) {
+  #home {
+    transform: translateY(0%);
+  }
 }
 
 
@@ -102,7 +107,7 @@
 
   #about {
     padding: 3px;
-    transform: translateY(0%);
+    transform: translateY(-10%);
   }
   #job-container{
     /*flex-direction: row;*/
@@ -130,7 +135,7 @@
   border: #fff 2px solid;
   cursor: pointer;
   background-color: #2d5839;
-  padding: 0px 5px;
+  padding: 5px 5px;
 }
 
 .flip-card-inner:hover {
@@ -179,6 +184,9 @@
 @media all and (max-width: 825px) {
   .project-link {
     height: 70%;
+  }
+  #projects {
+    transform: translateY(-5%);
   }
 }
 
