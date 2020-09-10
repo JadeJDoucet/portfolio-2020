@@ -193,6 +193,13 @@
   #projects {
     transform: translateY(-5%);
   }
+  .card-back {
+    display: none;
+  }
+  .card-back, .card-front {
+    -webkit-backface-visibility: visible; /* Safari */
+    backface-visibility: visible;
+  }
 }
 
 @media all and (max-width: 475px) {
