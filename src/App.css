@@ -76,8 +76,9 @@
   height: 500px;
 }
 .swiper-slide {
-  opacity: 1;
-  background-color: #18191d;
+  opacity: 0.975;
+  /*background-color: #18191d;*/
+  background: linear-gradient(276deg, rgba(1,97,232,1) 0%, rgba(155,0,232,1) 100%);
 }
 .swiper-wrapper {
   margin-top: 50px;
