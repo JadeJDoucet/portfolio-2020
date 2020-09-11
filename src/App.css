@@ -105,7 +105,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  transform: translateY(10%);
+  transform: translateY(5%);
 }
 
 #home h2 {
@@ -130,7 +130,7 @@
   height: 100%;
   width: 100%;
   padding: 0px 15px;
-  transform: translateY(20%);
+  transform: translateY(10%);
 }
 
 #bio-container {
@@ -181,7 +181,7 @@
   text-align: center;
   border: #fff 2px solid;
   cursor: pointer;
-  background-color: #2d5839;
+  background-color: #0161E8;
   padding: 5px 5px;
 }
 
@@ -250,7 +250,7 @@
 }
 
 .project-link {
-  background-color: #18191d;
+  /*background-color: #18191d;*/
   color: #fff;
   text-decoration: none;
   height: 200px;
