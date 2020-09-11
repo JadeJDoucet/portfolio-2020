@@ -4,14 +4,16 @@
 
 .app-logo {
   pointer-events: none;
-  background: url("../src/darker_portrait.PNG");
+  background: url("../src/lighter_portrait.PNG");
   background-size: cover;
+  background-position: center -35px;
+  background-repeat: no-repeat;
   width: 150px;
   height: 150px;
   border-radius: 30px;
   margin-left: auto;
   margin-right: auto;
-  opacity: 0.89;
+  opacity: 0.9;
 }
 
 
