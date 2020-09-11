@@ -27,9 +27,9 @@ function Home() {
                 <a href="https://dev.to/jadejdoucet">
                 < FontAwesomeIcon icon={['fab', 'dev']} />
                 </a>
+                <div className="arrow"></div>
             </div>
             <br/><br/>
-            <h1>↓ Scroll ↓</h1>
         </div>
     );
 }
