@@ -53,7 +53,7 @@
   border-top: none;
   border-right: 1px #fff solid;
   border-bottom: 1px #fff solid;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
   animation-iteration-count: infinite;
   animation-name: arrow;
 }
