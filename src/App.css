@@ -11,7 +11,7 @@
   border-radius: 30px;
   margin-left: auto;
   margin-right: auto;
-  opacity: 0.9;
+  opacity: 0.89;
 }
 
 
@@ -44,6 +44,7 @@
   top: 50%;
   margin: -20px 0 0 -20px;
   -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
   border-left: none;
   border-top: none;
   border-right: 2px #fff solid;
@@ -84,9 +85,8 @@
   height: 500px;
 }
 .swiper-slide {
-  opacity: 0.975;
   /*background-color: #18191d;*/
-  background: linear-gradient(276deg, rgba(1,97,232,1) 0%, rgba(155,0,232,1) 100%);
+  background: linear-gradient(276deg, rgba(1,97,232,0.9) 0%, rgba(155,0,232,0.9) 100%);
 }
 .swiper-wrapper {
   margin-top: 50px;
@@ -127,7 +127,7 @@
 
 @media all and (max-width: 825px) {
   #home {
-    transform: translateY(0%);
+    transform: translateY(2%);
   }
 }
 
@@ -164,10 +164,7 @@
 
   #about {
     padding: 3px;
-    transform: translateY(-10%);
-  }
-  #job-container{
-    /*flex-direction: row;*/
+    transform: translateY(-5%);
   }
 
   .skills {
@@ -327,5 +324,11 @@
 }
 .nav-item:hover {
   cursor: pointer;
+}
+
+@media all and (max-width: 760px) {
+  .swiper-pagination {
+    background-color: rgba(36, 0, 32, 0.49);
+  }
 }
 
