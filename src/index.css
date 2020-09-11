@@ -10,7 +10,11 @@ body {
   color: #fff;
   height: 100vh;
   overflow: hidden;
-  background-color: #18191d;
+  /*background-color: #18191d;*/
+  background-image: url("synthwave_sunset_1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 
