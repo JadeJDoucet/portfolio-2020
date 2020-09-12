@@ -50,7 +50,7 @@ function App() {
           return `<span class="${className} nav-item" id="nav-${index}">${navIndexToPage(index)}</span>`;
         }}}
         speed={500}
-        cubeEffect={{ slideShadows: false }}
+        cubeEffect={{ slideShadows: true }}
         
         freeMode={false}
         freeModeMomentum={true}
