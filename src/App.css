@@ -2,8 +2,18 @@
   text-align: center;
 }
 
-.App-logo {
+.app-logo {
   pointer-events: none;
+  background: url("../src/lighter_portrait.PNG");
+  background-size: cover;
+  background-position: center -35px;
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 150px;
+  border-radius: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.9;
 }
 
 
@@ -36,6 +46,7 @@
   top: 50%;
   margin: -20px 0 0 -20px;
   -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
   border-left: none;
   border-top: none;
   border-right: 2px #fff solid;
@@ -76,8 +87,8 @@
   height: 500px;
 }
 .swiper-slide {
-  opacity: 1;
-  background-color: #18191d;
+  /*background-color: #18191d;*/
+  background: linear-gradient(276deg, rgba(1,97,232,0.9) 0%, rgba(155,0,232,0.9) 100%);
 }
 .swiper-wrapper {
   margin-top: 50px;
@@ -104,7 +115,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  transform: translateY(10%);
+  transform: translateY(5%);
 }
 
 #home h2 {
@@ -118,7 +129,7 @@
 
 @media all and (max-width: 825px) {
   #home {
-    transform: translateY(0%);
+    transform: translateY(2%);
   }
 }
 
@@ -129,7 +140,7 @@
   height: 100%;
   width: 100%;
   padding: 0px 15px;
-  transform: translateY(20%);
+  transform: translateY(10%);
 }
 
 #bio-container {
@@ -155,10 +166,7 @@
 
   #about {
     padding: 3px;
-    transform: translateY(-10%);
-  }
-  #job-container{
-    /*flex-direction: row;*/
+    transform: translateY(-5%);
   }
 
   .skills {
@@ -178,9 +186,11 @@
   width: 100%;
   height: 100%;
   text-align: center;
-  border: #fff 2px solid;
+  /*border: #fff 2px solid;*/
+  border-radius: 30px;
+  box-shadow: 0px 0px 5px 1px #fff;
   cursor: pointer;
-  background-color: #2d5839;
+  background-color: rgba(27, 77, 228, 0.3);
   padding: 5px 5px;
 }
 
@@ -249,7 +259,7 @@
 }
 
 .project-link {
-  background-color: #18191d;
+  /*background-color: #18191d;*/
   color: #fff;
   text-decoration: none;
   height: 200px;
@@ -316,5 +326,11 @@
 }
 .nav-item:hover {
   cursor: pointer;
+}
+
+@media all and (max-width: 760px) {
+  .swiper-pagination {
+    background-color: rgba(36, 0, 32, 0.49);
+  }
 }
 
