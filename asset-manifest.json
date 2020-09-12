@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.18f96883.chunk.css",
+    "main.css": "/static/css/main.b5a6e244.chunk.css",
     "main.js": "/static/js/main.bcb3089c.chunk.js",
     "main.js.map": "/static/js/main.bcb3089c.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e40405f4.js",
@@ -9,10 +9,10 @@
     "static/js/2.60d549fb.chunk.js": "/static/js/2.60d549fb.chunk.js",
     "static/js/2.60d549fb.chunk.js.map": "/static/js/2.60d549fb.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.1761b98ad334cfdc4e24119445eba300.js": "/precache-manifest.1761b98ad334cfdc4e24119445eba300.js",
+    "precache-manifest.4b5c1f7ce7da0945176fe87c392d171f.js": "/precache-manifest.4b5c1f7ce7da0945176fe87c392d171f.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.68424154.chunk.css.map": "/static/css/2.68424154.chunk.css.map",
-    "static/css/main.18f96883.chunk.css.map": "/static/css/main.18f96883.chunk.css.map",
+    "static/css/main.b5a6e244.chunk.css.map": "/static/css/main.b5a6e244.chunk.css.map",
     "static/js/2.60d549fb.chunk.js.LICENSE.txt": "/static/js/2.60d549fb.chunk.js.LICENSE.txt",
     "static/media/App.css": "/static/media/lighter_portrait.8bfd59b4.PNG",
     "static/media/index.css": "/static/media/synthwave_sunset_1.92bb8efe.jpg"
@@ -21,7 +21,7 @@
     "static/js/runtime-main.e40405f4.js",
     "static/css/2.68424154.chunk.css",
     "static/js/2.60d549fb.chunk.js",
-    "static/css/main.18f96883.chunk.css",
+    "static/css/main.b5a6e244.chunk.css",
     "static/js/main.bcb3089c.chunk.js"
   ]
 }
