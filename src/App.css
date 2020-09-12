@@ -299,6 +299,10 @@
   width: 200px;
 }
 
+.project-title {
+  margin: 0px;
+}
+
 
 /* Media Queries */
 @media all and (max-width: 825px) {
