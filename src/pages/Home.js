@@ -27,7 +27,11 @@ function Home() {
                 <a href="https://dev.to/jadejdoucet">
                 < FontAwesomeIcon icon={['fab', 'dev']} />
                 </a>
-                <div className="arrow"></div>
+                <br />
+                <div className="projects-cta" onClick={()=>document.getElementById('nav-1').click()}>
+                    <div>See My Work</div>
+                    <div className="arrow"></div>
+                </div>
             </div>
             <br/><br/>
         </div>
