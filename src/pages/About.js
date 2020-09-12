@@ -5,8 +5,7 @@ export default function About() {
         <div id="about">
             <div id="bio-container">
                 <h2 className="page-title">Bio</h2>
-                <p>From a childhood of playing video games, to developing them in highschoool, and now creating full stack applications, you could say I'm an avid lover of technology.
-                    I moved to the New Orleans area from Luling, a small town 30 minutes outside of New Orleans, with a hope for constructing a future for myself that I would enjoy.
+                <p>&nbsp;&nbsp;From a childhood of playing video games, to developing them in highschoool, and now creating full stack applications, you could say I'm an avid lover of technology.
                     I studied JavaScript and Unity game development while working in an oil refinery, and eventually left to start a career as a Software Developer.
                     In 2019, I attended Operation Spark in New Orleans where I developed a solid foundation of JavaScript,
                      and now work as a Full Stack Developer.
