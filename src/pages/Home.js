@@ -11,8 +11,8 @@ library.add(fab);
 function Home() {
     return (
         <div id="home">
-            <div className="app-logo"></div>
             <h3>I'm under construction, but feel free to look around</h3>
+            <div className="app-logo"></div>
             
             <h2>Jade Doucet</h2>
             <h4 className="titles">Software Engineer, Web Developer</h4>
