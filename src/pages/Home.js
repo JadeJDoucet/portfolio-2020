@@ -27,13 +27,12 @@ function Home() {
                 <a href="https://dev.to/jadejdoucet">
                 < FontAwesomeIcon icon={['fab', 'dev']} />
                 </a>
-                <br />
-                <div className="projects-cta" onClick={()=>document.getElementById('nav-1').click()}>
+            </div>
+            <div className="projects-cta" onClick={()=>document.getElementById('nav-1').click()}>
                     <div>See My Work</div>
                     <div className="arrow"></div>
-                </div>
             </div>
-            <br/><br/>
+            <br/><br/><br/>
         </div>
     );
 }
