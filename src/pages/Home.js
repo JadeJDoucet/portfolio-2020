@@ -28,6 +28,7 @@ function Home() {
                 < FontAwesomeIcon icon={['fab', 'dev']} />
                 </a>
             </div>
+            <br />
             <div className="projects-cta" onClick={()=>document.getElementById('nav-1').click()}>
                     <div>See My Work</div>
                     <div className="arrow"></div>
