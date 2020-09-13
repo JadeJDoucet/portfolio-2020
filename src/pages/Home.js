@@ -30,7 +30,7 @@ function Home() {
             </div>
             <br />
             <div className="projects-cta" onClick={()=>document.getElementById('nav-1').click()}>
-                    <div>See My Work</div>
+                    <div className="cta-text">See My Work</div>
                     <div className="arrow"></div>
             </div>
             <br/><br/><br/>
