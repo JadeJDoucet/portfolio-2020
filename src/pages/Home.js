@@ -12,9 +12,10 @@ function Home() {
     return (
         <div id="home">
             <div className="app-logo"></div>
-            
-            <h2>Jade Doucet</h2>
-            <h4 className="titles">Software Engineer, Web Developer</h4>
+            <div>
+                <h2>Jade Doucet</h2>
+                <h4 className="titles">Software Engineer, Web Developer</h4>
+            </div>
 
             <div className="icons-row">
                 <a href="https://linkedin.com/in/jadejdoucet" target="_blank" rel="noopener noreferrer">
