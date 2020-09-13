@@ -20,11 +20,11 @@ function Home() {
                 <a href="https://linkedin.com/in/jadejdoucet">
                     <FontAwesomeIcon icon={['fab', 'linkedin']} />
                 </a>
-                <a href="https://github.com/JadeJDoucet">
-                    <FontAwesomeIcon icon={['fab', 'github']} />
+                <a href="https://github.com/JadeJDoucet" id="git-link">
+                    <FontAwesomeIcon icon={['fab', 'github']} onClick={()=>document.getElementById('git-link').click()}/>
                 </a>
-                <a href="https://dev.to/jadejdoucet">
-                < FontAwesomeIcon icon={['fab', 'dev']} />
+                <a href="https://dev.to/jadejdoucet" id="dev-link">
+                < FontAwesomeIcon icon={['fab', 'dev']} onClick={()=>document.getElementById('dev-link').click()}/>
                 </a>
             </div>
             <br />
