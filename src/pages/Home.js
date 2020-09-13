@@ -31,8 +31,8 @@ function Home() {
             <br />
             <div className="projects-cta" onClick={()=>document.getElementById('nav-1').click()}>
                     <div className="cta-text">See My Work</div>
-                    <div className="arrow"></div>
             </div>
+            <div className="arrow"></div>
             <br/><br/><br/>
         </div>
     );
