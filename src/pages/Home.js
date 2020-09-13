@@ -17,14 +17,14 @@ function Home() {
             <h4 className="titles">Software Engineer, Web Developer</h4>
 
             <div className="icons-row">
-                <a href="https://linkedin.com/in/jadejdoucet">
+                <a href="https://linkedin.com/in/jadejdoucet" target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={['fab', 'linkedin']} />
                 </a>
-                <a href="https://github.com/JadeJDoucet" id="git-link">
-                    <FontAwesomeIcon icon={['fab', 'github']} onClick={()=>document.getElementById('git-link').click()}/>
+                <a href="https://github.com/JadeJDoucet" target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={['fab', 'github']} />
                 </a>
-                <a href="https://dev.to/jadejdoucet" id="dev-link">
-                < FontAwesomeIcon icon={['fab', 'dev']} onClick={()=>document.getElementById('dev-link').click()}/>
+                <a href="https://dev.to/jadejdoucet" target="_blank" rel="noopener noreferrer" >
+                < FontAwesomeIcon icon={['fab', 'dev']} />
                 </a>
             </div>
             <br />
