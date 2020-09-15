@@ -17,7 +17,6 @@ function Home() {
                 <h4 className="titles">Software Engineer, Web Developer</h4>
             </div>
             <div className="icons-row">
-                
                 <a href="https://linkedin.com/in/jadejdoucet" target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={['fab', 'linkedin']} />
                 </a>
