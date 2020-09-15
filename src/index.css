@@ -17,6 +17,12 @@ body {
   background-repeat: no-repeat;
 }
 
+@media all and (max-width: 825px) {
+  body {
+    background-image: url("synthwave_sunset_2.jpg");
+  }
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
