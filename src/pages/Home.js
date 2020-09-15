@@ -16,8 +16,8 @@ function Home() {
                 <h2>Jade Doucet</h2>
                 <h4 className="titles">Software Engineer, Web Developer</h4>
             </div>
-
             <div className="icons-row">
+                
                 <a href="https://linkedin.com/in/jadejdoucet" target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={['fab', 'linkedin']} />
                 </a>
@@ -32,7 +32,7 @@ function Home() {
             <div className="projects-cta" onClick={()=>document.getElementById('nav-1').click()}>
                     <div className="cta-text">See My Work</div>
             </div>
-            <div className="arrow"></div>
+            <div className="arrow" onClick={()=>document.getElementsByClassName("projects-cta")[0].click()}></div>
             <br/><br/><br/>
         </div>
     );
